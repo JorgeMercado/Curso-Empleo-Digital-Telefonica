@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tablas de multiplicar</title>
+<script>
+	function borrarNumero() {
+		var inputNumero = document.getElementById("inputNumero");
+		inputNumero.value = "";
+	}
+</script>
+<style>
+td{
+	text-align:center;
+}
+</style>
+</head>
+<body>
+	<form action="GenerarTabla" method="POST">
+		<div>
+			<table>
+				<tr>
+					<td colspan="2">Tabla de multiplicar de un número</td>
+				</tr>
+				<tr>
+					<td colspan="2">Número: <input type="number" id="inputNumero"
+						name="inputNumero" placeholder="Escribe un  numero"></td>
+				</tr>
+				<tr>
+					<td><button type="submit">Pedir tabla del número</button></td>
+					<td><button onclick="borrarNumero();">Borrar numero</button></td>
+				</tr>
+			</table>
+		</div>
+	</form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+div{
+	padding:20px;
+	border:solid;
+	border-width:1px;
+	border-color:black;
+	background:cyan;
+	border-color:blue;
+	margin:1em;
+}
+#rotulo{
+	text-align:center;
+	font-size:2em;
+	font-color:blue;
+	border:transparent;
+	border-width:0px;
+	background:none;
+	padding:20px;
+}

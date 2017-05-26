@@ -1,0 +1,6 @@
+Fabricadepiezas.fabricaPiezas
+Fabricadepiezas.Fabricadepiezas
+javaapplication1.JavaApplication1
+javaapplication1.fabricaPiezas
+fabricadepiezas.fabricaPiezas
+fabricadepiezas.Fabricadepiezas

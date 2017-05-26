@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+	<Resource name ="jdbc/Actividad_2_8_DB" auth="Container"
+	type ="javax.sql.DataSource"
+	username ="jorge"
+	password="12345"
+	diverClassName = "com.mysql.jbdc.Driver"
+	url="jdbc:mysql://localhost:3306/actividad_2_8"
+	maxActive="10" maxIdle="4">
+	</Resource>
+</context>

@@ -1,0 +1,87 @@
+body,html{
+	background-color: lightgrey;
+}
+header{
+	width: 100%;
+	height: 159px;
+}
+#contenedorcabecera{
+	float: left;
+	width: 100%; /*Ajusta el tamaño.En mi caso lo quiero centrar*/
+	height: 160px;
+	background: -webkit-linear-gradient(blue, lightblue);
+}
+#logo{
+	width: 5%;
+	float: left;
+	height: 50%;
+	background-image: url(images/icono.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	margin-top: 15px;
+}
+#titulologo{
+	width:100%;
+	height:60px;
+	margin-top:100px;
+}
+#contenedorcentro{
+	float:left;
+	width: 100%;
+	margin-left: auto;
+	margin-right:auto;
+	height: 700px;
+}
+#separadorizquierda{
+	float:left;
+	width: 30%;
+	height: 30%;
+}
+#logocentral{
+	float:left;
+	width: 20%;
+	height: 30%;
+}
+#logocentral img{
+	height: 88%;
+}
+#separadorderecha{
+	float:left;
+	width: 30%;
+	height: 30%;
+}
+#titulologocentral{
+	width:100%;
+	height: 10%;
+	text-align: center;
+	margin-top: 50%;
+}
+#textoderecha{
+	float:left;
+	width: 19.5%;
+	height: 30%;
+	text-align: left;
+}
+#formulario{
+	float: left;
+	border:1px solid black;
+	height: 61%;
+	width: 50%;
+}
+#cabeceraformulario{
+	float:left;
+	border:1px solid black;
+	height: 8%;
+	width: 50%;
+	text-align: center;			
+}
+footer{		
+	float: left;
+	width: 100%;		
+	text-align: center;				
+}
+#contenedortodo{
+	margin-left: auto;
+	margin-right: auto;
+}

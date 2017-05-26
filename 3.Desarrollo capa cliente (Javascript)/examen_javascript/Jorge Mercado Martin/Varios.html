@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ES">
+    <head>
+    <title>VARIOS</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Your description">
+    <meta name="keywords" content="Your keywords">
+    <meta name="author" content="Your name">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.1.1.js"></script>
+    <script src="js/bgstretcher.js"></script>
+    <script src="js/js.js"></script>
+    <script>
+	$(function(){
+      //  Initialize Backgound Stretcher
+      $('BODY').bgStretcher({
+        images: ['img/tecnología.jpg'], 
+		imageWidth: 1600, 
+		imageHeight: 964, 
+		resizeProportionally:true	
+       });	
+    });
+    </script>
+    </head>
+    <body>
+<div class="extra-block"> 
+      <!--==============================row-top=================================-->
+      <div class="row-top">
+    <div class="main">
+          <ul class="list-soc">
+        <li><a href="#"><img alt="" src="img/soc-icon1.png"></a></li>
+        <li><a href="#"><img alt="" src="img/soc-icon2.png"></a></li>
+      </ul>
+        </div>
+  </div>
+      
+      <!--==============================header=================================-->
+      
+      <header>
+    <div class="row-nav">
+        <div class="main">
+        <h1 class="logo"><a href="Examen.html"><img alt="LUXE" src="img/logo_luxe.png"></a></h1>
+        <nav>
+           <ul class="menu">
+            <li><a href="Examen.html">Inicio</a></li>
+            <li><a href="index-1.html">Sobre nosotros</a></li>
+            <li><a href="index-2.html">Servicios  </a></li>
+            <li><a href="index-3.html">Galeria</a></li>
+            <li><a href="index-4.html">Contáctanos</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+       <div class="row-1">
+         </div>
+      </div>
+  </header>
+  <!--==============================content=================================-->
+    <section id="content">
+      <div class="separador">
+      <p>TECNOLOGÍA</p>
+      <a ><img id="uno" onmouseover="mouseOverUno()" onmouseout="mouseOut()" src="img/tecnología.jpg" width="100%" height="100%"></a>
+      </div>
+      <div class="separador">
+      <p>RESTAURACIÓN</p>
+      <a ><img id="dos" onmouseover="mouseOverDos()" onmouseout="mouseOut()" src="img/restauración.jpg" width="100%" height="100%"></a>
+      </div>
+      <div class="separador">
+      <p>ARTE</p>
+      <a ><img id="tres" onmouseover="mouseOverTres()" onmouseout="mouseOut()" src="img/arte.jpg" width="100%" height="100%"></a>
+      </div>
+      <div class="separador">
+      <p>EVENTOS</p>
+      <a ><img id="cuatro" onmouseover="mouseOverCuatro()" onmouseout="mouseOut()" src="img/eventos.jpg" width="100%" height="100%"> </a>   
+      </div>
+    </section>
+ 
+ </div>
+<div class="block"> 
+      <!--==============================footer================================-->
+      <footer>
+    <div class="main aligncenter">
+          <div class="privacy">Enigma   &copy; 2017 <span>|</span> <a href="index-5.html" rel="nofollow">Privacy Policy</a> <span>|</span> <strong>Website Template designed by <a href="http://www.templatemonster.com">TemplateMonster.com</a></strong> </div>
+        </div>
+  </footer>
+    </div>
+    <div class="velo"></div>
+    <div class="modal">
+      <div id="contenido">
+        <button class="reservar">RESERVAR</button>
+        <button class="comprar">COMPRAR ONLINE</button>
+      </div>
+    <a><div id="cerrar">CERRAR</div></a></div>
+
+    <div class="velo1"></div>
+    <div class="modal1">
+      <div id="contenido1">
+      <br>ELIJA LA FECHA DE RESERVA
+      <br>
+        <input type="date" name="calendario">
+        <button id="aceptar">Aceptar</button>
+      </div>
+
+    <a><div id="cerrar1">CERRAR</div></a></div>
+</body>
+</html>

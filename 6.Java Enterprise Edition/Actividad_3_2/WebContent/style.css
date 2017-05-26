@@ -1,0 +1,31 @@
+@CHARSET "ISO-8859-1";
+table{
+	border:solid;
+	border-width:1px;
+	border-color:black;
+	cellpadding:0px;
+	cellspacing:0px;
+	border-collapse:collapse;
+}
+td{
+	border-left:solid;
+	border-left-width:1px;
+	border-left-color:black;
+	border-right:solid;
+	border-right-width:1px;
+	border-right-color:black;
+	padding:3em;
+}
+.cabFila{
+	color: white;
+	text-align:center;
+	background-color:#000080;
+}
+.celda{
+	text-align:center;
+	background-color:#75a817;
+}
+.pie{
+	background-color:#12596d;
+	text-align:center;
+}

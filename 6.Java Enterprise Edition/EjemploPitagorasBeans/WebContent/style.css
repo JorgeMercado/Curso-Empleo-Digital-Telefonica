@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+.triangulo{
+	margin-left: 40%;
+	margin-right: 40%;
+}
+h1{
+	text-align: center;
+}
+.catetos{
+	text-align: center;
+}

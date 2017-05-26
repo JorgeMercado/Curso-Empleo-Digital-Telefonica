@@ -1,0 +1,43 @@
+@CHARSET "ISO-8859-1";
+div{
+	text-align:center;
+}
+.formulario{
+	text-align:center;
+	border-radius:5px;
+	background-color: #008040;
+	box-shadow: 10px 10px 5px #000000;
+	margin-left: 23%;
+	margin-right: 23%;
+	padding-bottom: 5px;
+}
+.tablaMuestra{
+	margin-left:33%;
+	margin-right:33%;
+	width:30%;
+	text-align:center;
+	background-color:#808040;
+	padding-left: 25px;
+}
+td,tr{
+	text-align: center;
+}
+footer{
+	text-align:center;
+	margin:auto;
+	width :100%;
+	position: fixed;
+	bottom: 0;
+	background-color: lightblue;
+}
+header{
+	text-align:center;
+	margin: auto;
+	width:100%;
+	position:fixed;
+	top:0;
+	background-color: #8963d1;
+}
+p{
+	text-align: center;
+}

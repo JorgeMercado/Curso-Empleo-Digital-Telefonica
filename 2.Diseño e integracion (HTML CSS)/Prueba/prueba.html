@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Esto es un comentario-->
+
+<html lang = "es"> <!--Le especificas el lenguaje(problemas con algunos navegadores)-->
+
+<head>
+	<title> PRUEBA </title>
+	<meta charset="utf-8"><!--Es una codificacion para saber que caracteres tiene (problemas con algunos navegadores)-->
+	<meta name = "keywords" content = "surf, mar, etc..."> <!--Palabras clave de tu pagina-->
+	<meta name = "descripcion" content = "Mi pagina trata sobre muchas cosas y muy buenas"> <!--Descripcion de tu pagina web-->
+	<meta name = "language" conent = "es"> <!--El lenguaje tambien puede ser un meta-->
+	<meta name = "distribution" content = "global"> <!--Para distribuir tu pagina web donde quieras-->
+	<meta name = "robots" content = "all"> <!--none, noindex,index Indica si quieres que te indexen los buscadores-->
+	<meta name = "author" content = "Jorge"> <!--Autor de la web-->
+	<meta name = "email" content = "jorge_mm93@hotmail.com"> <!--Correo del utor de la web-->
+	<meta name ="viewport" content = "width-device-with, initial-scale=1.0"> <!--Esto hace que a pesar de que cambies el tamaño mantenga su relacion de aspecto.Lo inicia con un valor de 1.0 pero varia a tu manera-->
+	<meta http-equiv="refresh" content = "30"> <!--La tasa de refresco-->
+	<link rel="shortcut icon" type="image/gif" href="C:\Users\admin\Desktop\thinking-face.png" sizes="32x32">  <!--Añade un icono chorra al lado de nuestro titulo-->
+	<link rel="stylesheet" type="text/css" href=""> <!--Podemos añadir la hoja de estilos a nuestro documento en vez de hacerlo aqui. Se hace igual que con el favicon(Si esta en la misma carpeta, solo hace falta el nombre del css)-->
+	<style type="text/css" media="screen">
+		h1{
+			font-size: 66px;
+		}
+		#tituloprincipal{
+			/*subrayado*/
+		}
+		.titulos{
+			color:red;
+		}
+	</style> <!--Todos mis h1 seran azules. El style se puede meter dentro del head-->
+</head>
+
+<body>
+<h1 id="tituloprincipal" align="center" style="font-size: 40px" class="titulos"> HOLA MUY BUENAS</h1> <!--El font size y esas cosas suelen ir en -->
+<p> Hola </p><p align ="center">  que tal </p><p align ="right">  estamos </p>
+<p title="Esto es un parrafo"> Parrafo 1</p> <!--El tittle enseña algo cuando pasamos el raton por encima-->
+<p title="Esto es una chorrada"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla in nisl at dictum. In non diam quis ipsum porttitor pretium et a enim. Vivamus porttitor massa erat, a posuere mi dignissim in. Duis cursus, erat vel aliquam hendrerit, tellus quam mollis massa, sed finibus massa leo vitae metus. Sed leo nisi, volutpat quis sapien a, lacinia ultricies purus. Donec eu dapibus metus, dignissim varius lectus. Quisque ut nisi at libero condimentum luctus sit amet sollicitudin erat. Nunc vel dolor molestie, vulputate enim in, consequat lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam lacinia tellus nulla, quis malesuada orci tincidunt id. Donec diam arcu, sollicitudin at mauris in, lobortis finibus massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus lobortis quam diam, eget fermentum augue ullamcorper non. Duis rutrum mauris ut est molestie, vitae sollicitudin augue commodo. Nullam ex nisi, semper at pulvinar ut, lacinia volutpat sem.</p>
+<p title="Esto es otra chorrada"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla in nisl at dictum. In non diam quis ipsum porttitor pretium et a enim. Vivamus porttitor massa erat, a posuere mi dignissim in. Duis cursus, erat vel aliquam hendrerit, tellus quam mollis massa, sed finibus massa leo vitae metus. Sed leo nisi, volutpat quis sapien a, lacinia ultricies purus. Donec eu dapibus metus, dignissim varius lectus. Quisque ut nisi at libero condimentum luctus sit amet sollicitudin erat. Nunc vel dolor molestie, vulputate enim in, consequat lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam lacinia tellus nulla, quis malesuada orci tincidunt id. Donec diam arcu, sollicitudin at mauris in, lobortis finibus massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus lobortis quam diam, eget fermentum augue ullamcorper non. Duis rutrum mauris ut est molestie, vitae sollicitudin augue commodo. Nullam ex nisi, semper at pulvinar ut, lacinia volutpat sem.</p>
+<ol type="a" start="3">
+	<li>es la letra c</li> <!--Las il son las ordenadas-->
+	<li>es la letra d</li>
+	<li>es la letra e</li>
+	<li>es la letra f</li>
+</ol>
+
+<!--Estos comandos se usan para crear una tabla-->
+<p></p>
+<table border="5px">
+	<thead> <!--Th para la cabecera-->
+		<tr>                                                                       
+			<th>Titulo 1</th>
+			<th>Titulo 2</th>
+			<th>Titulo 3</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr><!--Td para el resto-->
+			<td colspan="2" align="center">Valor 1</td>
+			<td rowspan="2">Valor 2</td>
+		</tr>
+		<tr>
+			<td>Valor 4</td>
+			<td>Valor 5</td>
+		</tr>
+	</tbody>
+</table>
+
+<!--Creamos un enlace-->
+<p align="center">
+	<a  href="C:\Users\admin\Desktop\Diseño e integracion web\Ejercicios.html" target="_self" >Volver a ejercicios</a><!--Usamos el target blank para redirigir a una pestaña nueva. Self 																														para abrir en la misma pagina-->
+</p>
+
+<!--Insertamos una imagen-->
+<p align="center">
+	<img title="kawaii desune" src="Imagenes prueba/safe_image.gif">
+</p>
+
+<!--Formulario-->
+<form action="" method="get" accept-charset="utf-8" target="_self"><!--Obligatorio el action, define la accion que va a realizar el formulario, method es el metodo http por el 																				que se va a procesar el formulario. Con el get envia la inf, y con el post la muestra-->
+Nombre: <input type="text" name="nombre" placeholder="Jesus"  ><br><!--El type es el tipo de datos a recoger, y en el name el valor asociado.El placeholder es el texto de fondo de ejemplo-->
+Edad: <input type="number" name="edad" placeholder="18"><br>
+Contraseña: <input type="password" name="contraseña" placeholder="contraseña"><br>
+
+<!--Tipo radio-->
+<div>
+	Selecciona una opcion:
+</div>
+<div>
+	<input type="radio" name="genero" value="hombre"> Hombre
+</div>
+<div>
+	<input type="radio" name="genero" value="mujer"> Mujer
+</div>
+<div>
+	<input type="radio" name="genero" value="alien"> Alien
+</div>
+
+<!--Tipo checkbox-->
+<div>
+	Colores favoritos
+</div>
+<div>
+	<input type="checkbox" name="colores" value="azul">Azul
+</div>
+<div>
+	<input type="checkbox" name="colores" value="Verde">Verde
+</div>
+<div>
+	<input type="checkbox" name="colores" value="Rojo">Rojo
+</div><br>
+
+<!--Tipo elegir entre varias opciones de una lista-->
+<div>
+	Seleccione una divisa
+</div>
+<select name="divisa">
+	<option value="euros">€</option>
+	<option value="dolar">$</option>
+	<option value="libra">£</option>	
+	<option value="yen">¥</option>
+	<option value="won">원</option>	
+</select>
+
+<select name="divisa" multiple="true">
+	<option value="euros">€</option>
+	<option value="dolar">$</option>
+	<option value="libra">£</option>	
+	<option value="yen">¥</option>
+	<option value="won">원</option>	
+</select><br>
+
+<!--Comentarios al final-->
+<div>
+	<textarea name="comentarios" rows="5" cols="50" placeholder="escriba comentarios"></textarea>
+</div>
+
+<!--Boton de reset-->
+<input type="reset" name="reset" value="Reseteo del formulario">
+
+<!--Boton de enviar-->
+<input type="submit" name="enviar" value="Enviar">
+</form>
+
+</body>
+</html>

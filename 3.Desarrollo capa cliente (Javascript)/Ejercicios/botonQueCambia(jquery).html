@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style type="text/css">
+	.oculta{
+		display:none;
+	}
+	.visible{
+		display: inline;
+	}
+</style>
+</head>
+
+<body>
+    <p id="0">Chanante ipsum dolor sit amet, nui horcate chachachá to sueltecico tollina chavalada tontiploster. Asobinao traeros tol jamón bocachoti melifluo nianoniano adipisicing atiendee veniam. One more time cascoporro pepino en la mano elit magna labore chotera tunante. Te viste de torero ex churretoso eres un pirámidee, interneeeer soooy crossoverr es de traca no te digo ná y te lo digo tó adipisicing viejuno pero qué pelazo adipisicing dolore. Freshquisimo ayy qué gustico síberet bajonaaa estoy fatal de lo mío ea ullamco coconut gatete asquerosito cosica payacho. Aliqua cobete ju-já piticli, vivo con tu madre en un castillo tontaco eveniet saepe, chiquititantantan. Con las rodillas in the guanter pataliebre enjuto mojamuto cabeza de viejo cuerpo de joven hueles avinagrado.</p>
+    <button class='pushme'>MOSTRAR MAS</button>
+    <p id="1" class="oculta">A tope con la maquinaria cobete ut pepinoninoni tempor ad nianoniano síberet. Chavalada, monguer Guaper ea one more time nostrud enim gambitero chachachá. Aliqua nisi coconut cascoporro interneeeer. Pero qué pelazo ahí va qué chorrazo vivo con tu madre en un castillo tontiploster sed asobinao ju-já mamellas to sueltecico artista enim bonico del tó nuiiiii nui. Monetes eres un pirámidee zanguango agazapao nostrud forrondosco con las rodillas in the guanter et estoy fatal de lo mío cartoniano ayy qué gustico gaticos bocachoti asquerosito cabeza de viejo cuerpo de joven. Tempor churretoso ex freshquisimo. <br><br>
+	Veniam et ut agazapao, ut fresquete aliqua ojete moreno. Nianoniano chavalada gaticos bocachoti monguer Guaper quis. Eveniet, ea ex estoy fatal de lo mío cacahué. Veniam, pero qué pelazo veniam tontaco ju-já ut quis bizcoché artista cobete melifluo aliqua. Enjuto mojamuto one more time enim bonico del tó magna soooy crossoverr tontiploster pepino en la mano payacho ut quis. Hueles avinagrado freshquisimo asquerosito coconut mangurrián. Forrondosco atiendee churretoso.</p>
+    
+    <script>
+    $(document).ready(function(){
+    	$(".pushme").click(function () {
+      		$(this).text(function(i, text){
+        		return text == "MOSTRAR MAS" ? "MOSTRAR MENOS" : "MOSTRAR MAS";
+      		});
+      		$("#1").toggle(3000);
+   		});
+	});
+    </script>
+</body>
+
+</html>

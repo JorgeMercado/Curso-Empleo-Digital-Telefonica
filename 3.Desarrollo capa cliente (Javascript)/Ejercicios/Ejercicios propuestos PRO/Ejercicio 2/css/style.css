@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'westmeathregular';
+	src: url('../fonts/westmeath-webfont.woff2') format('woff2'),
+	     url('../fonts/westmeath-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+html{
+	background-color: purple;
+}
+h1{
+	font-family: 'westmeathregular';
+	color: red;
+	text-align: center;
+}
+.slider{
+	border: 1px solid black;
+	border-radius: 20px;
+	height: 700px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+#botonIzquierdo{
+	position: relative;
+	margin-top: -26%;
+	float: left;
+	background-image: url(../img/flechaIzquierda.png);
+	background-size:100% 100%;
+	width: 4%;
+	height: 9%;
+}
+#botonDerecho{
+	position: relative;
+	left: 96%;
+	margin-top: -26%;
+	float: left;
+	background-image: url(../img/flechaDerecha.png); 
+	background-size:100% 100%;
+	width: 4%;
+	height: 9%;
+}
+.contenidoSlider{
+	width: 100%;
+	height: 100%;
+}
+img{
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+.oculta{
+	display:none;
+}
+.visible{
+	display: inline;
+}

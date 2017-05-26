@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<meta charset="utf-8">
+<head>
+	<title>Métodos para arrays</title> 
+<style type="text/css">
+#caja { 
+    width: 500px;
+    border: 1px solid black;
+    float: right;
+    min-height: 100px;
+}
+</style>
+
+<script type="text/javascript">
+	//lo_que_devuelve(tipo de dato) function nombre_función (argumentos - lo que enviamos a la función)
+    //las funciones que no tienen nada (argumentos/retornos) se denominan void (vacías)
+  	
+    semana = ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"];
+
+
+/*
+    variableX = inicialización;
+    variableY = variableX.función_javascript
+-------------------
+    a = 1;
+    b = 8;
+
+    c = a + b;
+-------------------
+
+    a = "Me voy de vacaciones al Congo";
+    b = a.length;
+-------------------
+    a = 5;
+    b = "7";
+    c = a + b; -> 57
+
+    d = "Diego ";
+    e = "Collado ";
+    f = "Ramos";
+
+    g = d + e + f; -> Diego Collado Ramos
+*/
+
+	function cadena() { //método join()
+         miSemana = semana.join(" - ")
+         explicar = "Metodo join: convierte un array en cadena de texto. <br/>"
+         texto = document.getElementById("caja"); //variable = buscar en el HTML un elemento con una ID e insertar o realizar cualquier operación después.
+         //document.getElementById("X") = en el documento me buscará el elemento que se llame X
+         texto.innerHTML = explicar + miSemana; //innerHTML inserta como si fuese un HTML 	 
+    }
+	
+    function elInverso() { //método reverse()
+         inverso = semana.reverse();
+         texto = "array inverso con el método reverse(). <br>";
+         escribir(texto, inverso);
+    }
+	
+	function porcion() { //método slice(desde,hasta)
+         n1 = document.lasemana.num1.value; //coge el valor de una variable
+         n2 = document.lasemana.num2.value;
+         n1--;
+         miPorcion = semana.slice(n1,n2);
+         texto = "metodo slice(): Porción del array elegida:<br/>";
+         escribir(texto, miPorcion);
+         }
+
+	function quitar() { //método shift()
+         quitado = semana.shift();
+         texto1 = "metodo shift(): quitar el primer elemento: <br/>";
+         escribir(texto1, semana);
+         texto.innerHTML += "<br/> el elemento eliminado es: " + quitado;
+         }
+
+	function ordenar() { //método sort()
+         orden = semana.sort();
+         texto1 = "método sort(): ordenar alfabéticamente.<br/>";
+         escribir(texto1,orden);
+         }			 
+	
+	function escribir(intro,elArray) { //escribir resultados en la página.
+         texto = document.getElementById("caja");
+         texto.innerHTML = intro;
+         for (i in elArray){ //for (i in array) = para i con la longitud del array
+            texto.innerHTML += elArray[i]+ " ";}	 
+            
+         }
+</script>
+</head>
+
+<body>
+	<h1>Métodos para arrays</h1>
+
+	<div id="caja"></div>
+
+	<p>Con array vamos a ver varios métodos:</p>
+	<p><tt> semana = ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado", "domingo"]</tt></p>
+
+		<form action="#" name="lasemana">
+  			<p>metodo joint(): convertir el array en una cadena de texto: 
+     		<input type="button" onclick="cadena()" value="convertir a texto" /></p>
+  
+  			<p>Metodo reverse(): invierte el orden del array: 
+      		<input type="button" onclick="elInverso()" value="invertir orden" /></p>
+  
+  			<p>Metodo slice(): obtener una porcion del array. Escribe dos números del 1 al 7:</p>
+  			<p><input type="text" name="num1" maxlength="1" size="1" /> : primer número ...
+     		<input type="text" name="num2" maxlength="1" size="1" /> : segundo número
+     		<input type="button" onclick="porcion()" value="Ver días seleccionados." /></p> 
+  
+  			<p>método shift: Elimina el primer elemento y lo devuelve en otra variable.</p>
+  			<p><input type="button" onclick="quitar()" value="Eliminar primer elemento"  /> </p>
+  			
+  			<p>Método sort(): ordenar alfabeticamente: </p>
+  			<p><input type="button" onclick="ordenar()" value="en orden alfabético"  /> </p>
+	</form>
+</body>
+</html>
+

@@ -1,0 +1,35 @@
+h1{
+	text-align: center;
+}
+.completa{
+	width: 45%;
+	height: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.fila{
+	width:100%;
+	height: 33%;
+}
+#celda1,#celda2,#celda3,#celda4,#celda5,#celda6,#celda7,#celda8,#celda9{
+	border: 1px solid black;	
+	float: left;
+	width:33%;
+	height:100%; 
+	text-align: center;
+}
+img{
+	width: 100%;
+	height:100%;
+}
+.cruz{
+	background-image: url("../img/cruz.jpg");
+	background-size: 100% 100%;
+}
+.circulo{
+	background-image:url("../img/circulo.jpg");
+	background-size: 100% 100%;
+}
+.vacia{
+	background-color: white;
+}

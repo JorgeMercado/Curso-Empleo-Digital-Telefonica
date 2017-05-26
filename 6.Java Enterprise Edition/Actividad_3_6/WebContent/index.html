@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="PeticionDeSoporte.jsp" method="POST">
+		<label for="email">Email: </label><input type="email" id="email"
+			name="email" placeholder="Email" /> <br /> 
+		<label for="sw">Sofware</label>
+		<select id="sw" name="sw">
+			<option>Office</option>
+			<option>Calculadora</option>
+			<option>Edge</option>
+		</select> <br /> 
+		<label for="so">Sistema operativo</label>
+		<select id="so" name="so">
+			<option>Windows 8</option>
+			<option>Windows 10</option>
+			<option>Windows Server R2</option>
+		</select> <br /> 
+		<label for="problema">Problema:</label>
+		<textarea id="problema" name="problema"></textarea>
+		<br />
+		<button type="submit">Enviar</button>
+	</form>
+</body>
+</html>
