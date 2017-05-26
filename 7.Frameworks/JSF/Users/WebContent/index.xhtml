@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      	xmlns:h="http://java.sun.com/jsf/html"
+		xmlns:c="http://java.sun.com/jsf/core"
+		xmlns:p="http://xmlns.jcp.org/jsf/passthrough">
+<head>
+  <title><ui:insert name="title"><h:outputText value="${dic.titulo}" /></ui:insert></title>
+</head>
+
+<body>
+<h:form>
+
+	<h:panelGrid id="tabla" columns="2" cellpadding="2">
+		<h:outputLabel for="dni" value="${dic.dni}"/>
+		<h:inputText p:placeholder="Introduce el DNI" alt="DNI" name="dni" value="#{usuario.dni}"/>
+		<h:outputLabel  for="nombre" value="${dic.nombre}"/>
+		<h:inputText p:placeholder="Nombre de Usuario" name="nombre" value="#{usuario.nombre}"/>
+		<h:outputLabel  for="pass" value="${dic.pass}"/>
+		<h:inputSecret p:placeholder="Contraseña de Usuario" name="pass" value="#{usuario.password}"/>
+		<h:commandButton type="submit" action="#{usuario.insert(usuario)}" value="${dic.enviar}"/>
+	</h:panelGrid>
+</h:form>
+
+<h:outputLink value="/Users/faces/listado.xhtml"><h:outputText value="${dic.listado}"/></h:outputLink>
+
+</body>
+
+</html>

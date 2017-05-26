@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:fc="http://java.sun.com/jsf/core"
+      xmlns:c = "http://java.sun.com/jsp/jstl/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+<head>
+  <title><ui:insert name="title"><h:outputText value="${dic.titulo3}" /></ui:insert></title>
+</head>
+
+<body>
+
+<h:form>
+	<h:panelGrid columns="4" cellpadding="3" border="1">
+		<h:outputText value="${dic.dni}" />
+		<h:outputText value="${dic.nombre}" />
+		<h:outputText value="${dic.pass}" />
+		<h:outputText value="" />
+		<c:forEach var="users" items="${usuario.listar()}">		
+			<h:outputText value="${users.dni}" />
+			<h:outputText value="${users.nombre}" />
+			<h:outputText value="${users.password}" />
+		<h:commandButton action="#{usuario.delete(users)}" value="${dic.borrar}"/>
+		</c:forEach>
+	</h:panelGrid>
+</h:form>
+<h:outputLink value="index.xhtml"><h:outputText value="${dic.inicio}" /></h:outputLink>
+
+</body>
+
+</html>
